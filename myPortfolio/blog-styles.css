@@ -1,0 +1,58 @@
+body { 
+    background-color:magenta;
+    }
+
+  main{ 
+    margin: 5% auto;
+    width: 70%;
+    text-align: center  
+    
+  }
+    h1 {
+     font-size: 30px
+     font-family: Arial, Helvetica, sans-serif;
+     color:#7e01d1;
+     margin-top: 5% auto;
+    width: 70%;
+    text-align:center !important ;
+
+    
+  }
+ 
+    
+  article{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-size: 20px;
+    background-color:lightblue;
+    color:#;
+    margin-top:10px;
+    margin-bottom:15px;
+    line-height: 20px;
+    border: solid #02f78b 5px;
+    margin:4% auto;
+
+  }
+  
+  article > h3 {
+    font-size: 25xp ;
+    color: orchid;
+    text-align: center !important ; 
+}
+
+p:hover::first-letter  {
+  color:#fa4826;
+}
+  
+article:hover > h3  { color: orange;
+}
+
+
+footer{
+  margin-top: 5% auto;
+  margin: auto;
+    width: 70%;
+  color: green;
+  font-size:15px;
+  text-align: center
+}
+ 
