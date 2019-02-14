@@ -76,3 +76,21 @@ h1{
     text-decoration: none;
     border-radius: 50%;
   }
+
+  @media (max-width: 600px) {
+    header {
+
+      Font-size:20px;
+      height:auto ;
+      width: auto;
+      margin:3% auto;
+      display:flex;
+      }
+      
+      img {
+        margin-right: 10px;
+        border-radius: 60%;
+        height:10px;
+    }
+    
+  }
