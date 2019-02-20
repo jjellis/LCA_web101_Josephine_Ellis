@@ -19,7 +19,8 @@
                 </nav>
                 <main>
                   <h1>Main Title</h1>
-                   
+                  <div id="greeting">
+                    <p>name <br>welcome to this page</p>
                   <p>Main content</p>
                   <div id="calculator"> 
                   <input type="text" id="displaybox">              
@@ -30,10 +31,37 @@
                   
                   </div>
 
-                  <div id="clock">
-
+                  <body onload="tick()">
+                      <div class="clock">
+                          <div id="s" class="transform"></div>
+                          <div id="m" class="transform"></div>
+                          <div id="h" class="transform"></div>
+                          <div id="center"></div>
+                      </div>
+                  </body>
+                    <!--
+                  <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:256px;height:174px;"src="https://www.clocklink.com/html5embed.php?clock=046&timezone=CST&color=black&size=256&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=black"></iframe>
+                    
+                    <div id="a"></div>
+                    <div id="picture"></div>
+                    <form>
+                      <input id="UTCoffset" type="text" placeholder="UTC Time Zone">
+                    </form>
+                    <p id="result"></p>
+                  -->
 
                   </div>
+                  <div id="todo">
+                      <form action="/action_page.php">
+                       <input type="text" input="fname"><br>
+                        <input type="submit" value="Submit">
+                        <ul style="list-style-type:square;" >
+                            <li>fix page</li>
+                            <li>order</li>
+                            <li>design</li>
+                          </ul>
+                      </form>
+                    </div>  
 
                   <div class="month"> 
                         <ul>
@@ -71,7 +99,7 @@
                       <li>13</li>
                       <li>14</li>
                       <li>15</li>
-                      <li>16</li>
+                      <li><strong>16</strong></li>
                       <li>17</li>
                       <li>18</li>
                       <li>19</li>
@@ -89,11 +117,9 @@
 
                   </div>
 
-                  <div id="todo">
+                  
 
-                  </div>
-
-                  <div id="greeting">
+                  
 
 
                   </div>

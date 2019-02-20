@@ -15,6 +15,9 @@ width: auto;
 margin:3% auto;
 display:flex;
 }
+header > article {
+  font-size:20; 
+}
 
 img {
     margin-right: 10px;

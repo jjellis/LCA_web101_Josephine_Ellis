@@ -7,6 +7,7 @@ header {
     min-height: calc(100vh - 54px);
     grid-area: main;
   }
+
   nav {
     background-color: lightsalmon;
     grid-area: nav;
@@ -43,112 +44,165 @@ height:130px;
 width:120px;
 margin:4px;
   }
+  #displaybox{
+    width:100px;
+    margin 6px auto;
+    border-radius:4px;
+    padding:2px;
+  }    
   #calculator > button {
       margin:2px;
       align:center;
       border-radius:4px;
       height: 20px;
       width: 20px;
-      
-
-
   }
-#displaybox{
-width:100px;
-margin 6px auto;
-border-radius:4px;
-padding:2px;
 
+  *{
+		margin:0;
+		padding: 0;
+	}
+	.clock{
+		position: absolute;
+    top:100px;
+    left:10px;
+		width: 100px;
+		height: 100px;
+		background-color: black;
+		border-radius: 100%;
+		background-image: url("http://junesiphone.com/images/clock.png");
+		background-size: 100px;
+	}
+	.transform{
+		width: 2px;
+		position: absolute;
+		left:49px;
+		-webkit-transform-origin:bottom;
+	}
+	#s{
+		top:9px;
+		background-color: red;
+		height: 40px;
+	}
+	#m{
+		top:19px;
+		background-color: black;
+		height: 30px;
+	}
+	#h{
+		top:24px;
+		background-color: black;
+		height: 25px;
+	}
+	#center{
+		position: absolute;
+		right:45px;
+		top:45px;
+		width: 10px;
+		height: 10px;
+		background-color: black;
+    border-radius: 100%;
+    
+	}
 
-}
-ul {list-style-type: none;}
-body {font-family: Verdana, sans-serif;}
-
-
-.month {
-  padding: 70px 25px;
-  width: 100%;
-  background: #1abc9c;
-  text-align: center;
-}
-
-
-.month ul {
-  margin: 0;
-  padding: 0;
-}
-
-.month ul li {
-  color: white;
-  font-size: 20px;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-}
-
-
-.month .prev {
-  float: left;
-  padding-top: 10px;
-}
-
-.month .next {
-  float: right;
-  padding-top: 10px;
-}
-
-
-.weekdays {
-  margin: 0;
-  padding: 10px 0;
-  background-color:#ddd;
-}
-
-.weekdays li {
-  display: inline-block;
-  width: 13.6%;
-  color: #666;
-  text-align: center;
-}
-
-
-.days {
-  padding: 10px 0;
-  background: #eee;
-  margin: 0;
-}
-
-.days li {
-  list-style-type: none;
-  display: inline-block;
-  width: 13.6%;
-  text-align: center;
-  margin-bottom: 5px;
-  font-size:12px;
-  color: #777;
-}
-
-
-.days li .active {
-  padding: 5px;
-  background: #1abc9c;
-  color: white !important
-}
-
-
-  @media (min-width: 500px) {
-    .container {
-      grid-template-columns: 1fr 3fr;
-      grid-template-areas: 
-        "header  header"
-        "nav     nav"
-        "aside   main"
-        "banner  footer";
-    }
-    nav ul {
-      display: flex;
-      justify-content: space-between;
-    }
+html{background:#393939}
+ 
+  ul {list-style-type: none;}
+  body {font-family: Verdana, sans-serif;}
+  
+  
+  .month {
+    padding: 70px 25px;
+    background:lightslategray;
+    text-align: center;
   }
+  
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important
+  }
+  
+  #todo {
+   
+    font-size:15px;
+    top:150px;
+    right:450px;
+    height: 100px;
+    list-style-position: inside;
+  }
+
+    @media (min-width: 500px) {
+      .container {
+        grid-template-columns: 1fr 3fr;
+        grid-template-areas: 
+          "header  header"
+          "nav     nav"
+          "aside   main"
+          "banner  footer";
+      }
+      nav ul {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    
   
   @media (min-width: 700px) {
     .container {
