@@ -39,7 +39,7 @@
                   <div id="todo">
                       <p>To do<p>
                       <form action="/action_page.php">
-                       <input type="text" input="fname"><br>
+                       <input type="text" input="fname" class="box"><br>
                         <input type="submit" value="Submit">
                         <ul style="list-style-type:square;" >
                             <li>fix page</li>
@@ -54,12 +54,19 @@
 
               <div id="calculator"> 
                   <input type="text" id="displaybox">              
-                  <button>7</button><button>8</button><button>9</button><button>x</button>
-                  <button>4</button><button>5</button><button>6</button><button>/</button>
-                  <button>1</button><button>2</button><button>3</button><button>+</button>
-                  <button>=</button><button>0</button><button>c</button><button>-</button>
-                  
+                  <div>
+                    <button>7</button><button>8</button><button>9</button><button>x</button>
                   </div>
+                  <div>
+                    <button>4</button><button>5</button><button>6</button><button>/</button>
+                  </div>
+                  <div>
+                    <button>1</button><button>2</button><button>3</button><button>+</button>
+                  </div>
+                  <div>
+                  <button>=</button><button>0</button><button>c</button><button>-</button>
+                  </div>
+              </div>
                   <form id="calculator2">
                     <input id="displaybox2" type="text" name="display" readonly> 
                     <input class="button" type="button" value="7" onclick="calculator.display.value += '7'">   
@@ -98,7 +105,7 @@
                         <li class="next">&#10095;</li>
                         <li>Febuary<br><span style="font-size:18px">2019</span></li>
                       </ul>
-                    </div>
+                </div>
                     
                   
                   <ul class="weekdays">
@@ -143,10 +150,10 @@
                     <li>28</li>
                     
                   </ul></div>
-                </aside>
-                <div class="banner">div.banner</div>
-                <footer>Term of Use. License Agreement</footer>
-              </div>
+            </aside>
+    <div class="banner">div.banner</div>
+   <footer>Term of Use. License Agreement</footer>
+        
     
 </body>
 </html>
