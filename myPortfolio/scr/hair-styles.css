@@ -68,7 +68,7 @@ header{
 
     display:flex;
     height: 324px;
-    width: 850px;
+    width: 73%;
     flex-direction: row;
     justify-content:space-around;
     margin-left:13%;
@@ -103,7 +103,9 @@ header{
     border: 2px solid black;
     box-shadow: 10px 10px 5px grey;
 }
-
+#info > div{
+    margin-right:7%;
+}
 
 #feature{
     display:flex;
