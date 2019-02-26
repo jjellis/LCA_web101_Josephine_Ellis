@@ -1,0 +1,165 @@
+
+body{
+    background:lightgrey;
+}
+header{
+    
+    display:flex;
+    flex-direction:row;
+    align-content: flex-end;
+    justify-content:center;
+    background:lightgreen;
+    
+    
+
+}
+.logo{
+    position: relative;
+    right:50px;
+    bottom:30px
+    padding-top: 10px;
+    padding-left:10px;
+    padding-right:20px;
+    height:8%;
+    width:9%;
+    
+
+}
+
+ button{
+    position: relative;
+    top:20px;
+    height:20%;
+    width: auto%;
+    font-size: 20px;  
+    background: transparent;
+    padding: 30px; 
+    padding-top:20px;
+    letter-spacing: 7px
+
+}
+#topbox{
+    
+    
+    border:2px solid black;
+    width: 73%;
+    height: 90%;
+    font-size:70px;
+    display:flex;
+    margin-top:5%;
+    margin-left:13%;
+    margin-bottom:2%;
+
+    
+}
+
+#topbox p {
+    margin: 10% auto;
+}
+
+.curl{
+    height: 400px;
+    width: auto;
+    margin-right:5%;
+
+}
+
+#info{
+
+    display:flex;
+    height: 324px;
+    width: 850px;
+    flex-direction: row;
+    justify-content:space-around;
+    margin-left:13%;
+    margin-bottom:2%;
+
+}
+
+.flip{
+    height:140px;
+    width: auto;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+    
+}
+
+.magz{
+    height:140px;
+    width:160px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+}
+
+.pink{
+    height:140px;
+    width:160px;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+}
+.shadow{
+    height:140px;
+    width:auto;
+    border: 2px solid black;
+    box-shadow: 10px 10px 5px grey;
+}
+
+
+#feature{
+    display:flex;
+    height: 324px;
+    width: 425px;
+    flex-direction: row;
+    justify-content:space-between;
+    margin-left:13%;
+    margin-bottom:2%;
+}
+
+.hairstuff{
+  height:140px;
+  width:auto;  
+}
+
+
+footer{
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+ 
+ 
+  
+ 
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+  
+  
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+}
+
+  @media (max-width: 600px) {
+
+  }
