@@ -8,7 +8,7 @@ header{
     flex-direction:row;
     align-content: flex-end;
     justify-content:center;
-    background:lightgreen;
+    background:mediumspringgreen;
     
     
 
@@ -16,8 +16,7 @@ header{
 .logo{
     position: relative;
     right:50px;
-    bottom:30px
-    padding-top: 10px;
+    padding-top: 5px;
     padding-left:10px;
     padding-right:20px;
     height:8%;
@@ -73,6 +72,8 @@ header{
     justify-content:space-around;
     margin-left:13%;
     margin-bottom:2%;
+    padding-left: 2%;
+    
 
 }
 
@@ -108,24 +109,104 @@ header{
  margin-right:7%;
 }
 
-#feature{
-    display:flex;
-    height: 324px;
+#Featured{
+    display:grid;
+    height: auto;
     width: 425px;
-    flex-direction: row;
-    justify-content:space-between;
+    margin-top: 7%;
     margin-left:13%;
     margin-bottom:2%;
+    border:2px solid black;
+    padding:0 2% 0 2%;
 }
 
 .hairstuff{
-  height:140px;
+  display:grid;
+  height:130px;
   width:auto;  
+  border-radius: 10%;
+  margin-left: 0%;
+  position: relative;
+}
+#Featured >h2{
+    margin-top: -15px;
+    margin-left:5px;    
+    top: -5px;
+    border:2px solid black;
+    width:22%;
+    background:mediumspringgreen;  
+    
 }
 
+#Featured >h3{
+    display:flex;
+    flex-direction:row;
+    align-content: flex-end;
+    justify-content:flex-end;
+    margin-top: -20%;
+    padding-right: 6%;
+}
+
+#hairstyle{
+    display:grid;
+    height: auto;
+    width: 425px;
+    margin-top: -40.5%;
+    margin-left:53%;
+    margin-bottom:2%;
+    border:2px solid black;
+    padding:0 2% 0 2%;
+}
+
+#hairstyle >h2{
+    margin-top: -15px;
+    margin-left:5px;    
+    top: -5px;
+    border:2px solid black;
+    width:22%;
+    background:mediumspringgreen;  
+    
+}
+
+#questions {
+    height: 320px;
+    width: 425px;
+    margin-top: 2%;
+    margin-left:53%;
+    margin-bottom:2%;
+    border:2px solid black;
+    padding:0 2% 0 2%;
+    font-size: 17px;
+}
+#questions >p {
+    margin-right:50%;
+    margin-top:-60%;
+}
+.wondering{
+    position: relative;
+    padding-top:8%;
+    height:250px;
+    width:auto;
+    border-radius: 30%;
+    margin-left:54%;
+   
+  
+
+
+}
 
 footer{
+
+    display:flex;
+    flex-direction:row;
+    align-content: flex-end;
+    justify-content:center;
+    background:mediumspringgreen;
+    margin-top: 10%;
+    
 .fa {
+    display:grid;
+    justify-context:space-between;
     padding: 20px;
     font-size: 30px;
     width: 50px;
@@ -163,6 +244,194 @@ footer{
   }
 }
 
+
   @media (max-width: 600px) {
+    body{
+        position: absolute;
+        background:lightgrey;
+    }
+    header{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        background:mediumspringgreen;
+        
+        
+        
+        
+    
+    }
+    .logo{
+        display: flex;
+        left:1%;
+        height:20%;
+        width:20%;
+        
+        
+    
+    }
+    
+     button{
+        left:2%;
+        width: 30%;
+        font-size: 15px;  
+        background: transparent;
+        padding: 1%; 
+        letter-spacing: 1px;
+        
+    
+    }
+    #topbox{
+        
+        
+        border:2px solid black;
+        width:  auto%;
+        height: 90%;
+        font-size:22px;
+        display:flex;
+        margin-top:10%;
+        margin-left:3%;
+        margin-bottom:10%;
+    
+        
+    }
+    
+    #topbox p {
+        margin: 10% auto;
+    }
+    
+    .curl{
+        height: 200px;
+        width: auto;
+        margin-right:5%;
+    
+    }
+    
+    #info{
+    
+        display:flex;
+        height: 324px;
+        width: 50%;
+        flex-direction: column;
+        justify-content:space-around;
+        margin-left:3%;
+        margin-bottom:2%;
+        margin-top:130%;
+        padding-left: 2%;
+        
+    
+    }
+    
+    .flip{
+        height:140px;
+        width: auto;
+        border: 2px solid black;
+        box-shadow: 10px 10px 5px grey;
+        
+    }
+    
+    .magz{
+        height:140px;
+        width:160px;
+        border: 2px solid black;
+        box-shadow: 10px 10px 5px grey;
+    }
+    
+    .pink{
+        height:140px;
+        width:160px;
+        border: 2px solid black;
+        box-shadow: 10px 10px 5px grey;
+    }
+    .shadow{
+        height:140px;
+        width:auto;
+        border: 2px solid black;
+        box-shadow: 10px 10px 5px grey;
+    }
+    
+    #Featured{
+        height: auto;
+        width: 200px;
+        margin-bottom:2%;
+        border:2px solid black;
+        padding:0 2% 0 2%;
+        margin-left:3%;
+        margin-top: 130%;
+    }
+    
+    .hairstuff{
+      display:grid;
+      height:130px;
+      width:auto;  
+      border-radius: 10%;
+      margin-left: 0%;
+      position: relative;
+      margin-bottom:2%;
+    }
+    #Featured >h2{   
+        top: -5px;
+        border:2px solid black;
+        width:50%;
+        background:mediumspringgreen;  
+        
+    }
+    
+    #Featured >h3{
+        display:flex;
+        flex-direction:row;
+        align-content: flex-end;
+        justify-content:flex-end;
+        margin-top: -20%;
+        padding-right: 6%;
+    }
+    
+    #hairstyle{
+        display:grid;
+        height: auto;
+        width: 200px;
+        margin-bottom:2%;
+        border:2px solid black;
+        padding:0 2% 0 2%;
+        margin:10% 0 4% 3%;
+    }
+    
+    #hairstyle >h2{
+        margin-top: -15px;
+        margin-left:5px;    
+        top: -5px;
+        border:2px solid black;
+        width:50%;
+        background:mediumspringgreen;  
+        
+    }
+    
+    #questions {
+        height: auto;
+        width: 200px;
+        margin-left:3%;
+        margin-bottom:2%;
+        border:2px solid black;
+        padding:0 2% 0 2%;
+        font-size: 17px;
+    }
+    #questions >p {
+        margin-right:50%;
+        margin-top:-60%;
+    }
+    .wondering{
+        position: relative;
+        padding-top:8%;
+        margin-bottom:60%;
+        height:200px;
+        width:auto;
+        border-radius: 30%;
+        margin-left:5%;
+       
+      
+    
+    
+    }
+    
 
   }
