@@ -15,7 +15,7 @@ header {
   aside {
    
     grid-area: aside;
-    width:30%;
+    width:50%;
     grid-area:right;
   }
   .banner {
@@ -147,7 +147,7 @@ html{background:#393939}
   
   .month {
     margin-top: 120px;
-    padding: 70px 25px;
+   
     background:lightslategray;
     text-align: center;
   }
@@ -235,9 +235,11 @@ html{background:#393939}
           "aside   main"
           "banner  footer";
       }
-      nav ul {
-        display: flex;
-        justify-content: space-between;
+      aside {
+   
+        grid-area: aside;
+        width:70%;
+        grid-area:right;
       }
     }
     
