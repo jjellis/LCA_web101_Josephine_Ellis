@@ -27,7 +27,9 @@ a{  display:flex;
   }
 iframe{
     margin:30px 5px 5px 3px;
+    width:560; height:315;
 }
+
 
 form {
     
@@ -110,4 +112,23 @@ textarea{
 }
 .button:hover {
     background: rgb(255, 13, 13)
+}
+
+@media (max-width: 800px){
+header{ width:96%; 
+}
+section{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    width:40%;
+}
+
+iframe{
+    width:60%;
+    height:50% ;
+}
+
+
+
 }
