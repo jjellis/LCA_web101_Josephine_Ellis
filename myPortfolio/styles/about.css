@@ -1,4 +1,6 @@
-
+body{
+    background:#026cf7;
+}
   
  header{
      height:100px;
@@ -60,7 +62,7 @@
       }   
 .list{
     
-    margin-top:-14%;
+    margin-top:-45%;
     background:url(https://dl.dropbox.com/s/mz2pjouq8xqw45k/wood_1.png?dl=1),black;
     color:#02f78b;
     padding:1%;
@@ -81,7 +83,7 @@
 }
 .list3{
 
-    margin-bottom:2%;
+    margin-bottom:8%;
     background:url(https://dl.dropbox.com/s/mz2pjouq8xqw45k/wood_1.png?dl=1),black;
     color:#02f78b;
     padding:1%;
@@ -94,6 +96,10 @@
 div>address{
     text-align:center;
     margin-bottom:5%;
+    font-size:20px;
+    border: solid 2px;
+    width:30%;
+   margin-left:35%;
 }
      
 footer{
