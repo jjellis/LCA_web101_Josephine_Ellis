@@ -61,7 +61,7 @@ body{
         border: 2px solid#02f78b;
       }   
 .list{
-    
+    margin-left:4%;
     margin-top:-45%;
     background:url(https://dl.dropbox.com/s/mz2pjouq8xqw45k/wood_1.png?dl=1),black;
     color:#02f78b;
@@ -72,7 +72,7 @@ body{
     
 }
 .list2{
-    
+    margin-left:4%;
     background:url(https://dl.dropbox.com/s/mz2pjouq8xqw45k/wood_1.png?dl=1),black;
     color:#02f78b;
     padding:1%;
@@ -82,7 +82,7 @@ body{
     
 }
 .list3{
-
+    margin-left:4%;
     margin-bottom:8%;
     background:url(https://dl.dropbox.com/s/mz2pjouq8xqw45k/wood_1.png?dl=1),black;
     color:#02f78b;
