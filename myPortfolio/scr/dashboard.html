@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../styles/dashboard-styles.css">
-    <title>Dashboard</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../styles/dashboard-styles.css">
+  <title>Dashboard</title>
 </head>
+
 <body>
-        <div class="container">
-                <header>"Hard work"</header>
-                <nav>
-                  <ul>
-                    <li><a href="#">nav 1</a></li>
-                    <li><a href="#">nav 2</a></li>
-                    <li><a href="#">nav 3</a></li>
-                  </ul>
-                </nav>
-                <main>
-                  <h1>Main Title</h1>
-                  <div id="greeting">
-                    
-                  
-                  
-                  </body>
-                    <!--
+  <div class="container">
+    <header>"Hard work"</header>
+    <nav>
+      <ul>
+        <li><a href="#">nav 1</a></li>
+        <li><a href="#">nav 2</a></li>
+        <li><a href="#">nav 3</a></li>
+      </ul>
+    </nav>
+    <main>
+      <h1>Main Title</h1>
+      <div id="greeting">
+
+
+
+</body>
+<!--
                   <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:256px;height:174px;"src="https://www.clocklink.com/html5embed.php?clock=046&timezone=CST&color=black&size=256&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=black"></iframe>
                     
                     <div id="a"></div>
@@ -34,126 +36,129 @@
                     </form>
                     <p id="result"></p>
                   -->
-                  
-                  </div>
-                  <div id="todo">
-                      <p>To do<p>
-                      <form action="/action_page.php">
-                       <input type="text" input="fname" class="box"><br>
-                        <input type="submit" value="Submit">
-                        <ul style="list-style-type:square;" >
-                            <li>fix page</li>
-                            <li>order</li>
-                            <li>design</li>
-                          </ul>
-                      </form>
-                    </div>  
 
-                
-          <aside>
+</div>
+<div id="todo">
+  <p>To do<p>
+      <form action="/action_page.php">
+        <input type="text" input="fname" class="box"><br>
+        <input type="submit" value="Submit">
+        <ul style="list-style-type:square;">
+          <li>fix page</li>
+          <li>order</li>
+          <li>design</li>
+        </ul>
+      </form>
+</div>
 
-              <div id="calculator"> 
-                  <input type="text" id="displaybox">              
-                  <div>
-                    <button>7</button><button>8</button><button>9</button><button>x</button>
-                  </div>
-                  <div>
-                    <button>4</button><button>5</button><button>6</button><button>/</button>
-                  </div>
-                  <div>
-                    <button>1</button><button>2</button><button>3</button><button>+</button>
-                  </div>
-                  <div>
-                  <button>=</button><button>0</button><button>c</button><button>-</button>
-                  </div>
-              </div>
-                  <form id="calculator2">
-                    <input id="displaybox2" type="text" name="display" readonly> 
-                    <input class="button" type="button" value="7" onclick="calculator.display.value += '7'">   
-                    <input class="button" type="button" value="8" onclick="calculator.display.value += '8'">
-                    <input class="button" type="button" value="9" onclick="calculator.display.value += '9'">
-                    <input class="button math" type="button" value="*" onclick="calculator.display.value += '*'">
-                    <input class="button" type="button" value="4" onclick="calculator.display.value += '4'">
-                    <input class="button" type="button" value="5" onclick="calculator.display.value += '5'"> 
-                    <input class="button" type="button" value="6" onclick="calculator.display.value += '6'">
-                    <input class="button math" type="button" value="/" onclick="calculator.display.value += '/'">
-                    <input class="button" type="button" value="1" onclick="calculator.display.value += '1'">
-                    <input class="button" type="button" value="2" onclick="calculator.display.value += '2'">
-                    <input class="button" type="button" value="3" onclick="calculator.display.value += '3'">
-                    <input class="button math" type="button" value="+" onclick="calculator.display.value += '+'">
-                    <input class="button" type="button" value="=" onclick="calculator.display.value =eval(calculator.display.value)>
-                    <input class="button" type="button" value="0" onclick="calculator.display.value += '0'">
-                    <input id="buttonclear" type="button" value="c" onclick="calculator.display.value += ''">
-                    <input class="button math" type="button" value="-" onclick="calculator.display.value += '-'">         
-                    
-                
 
-                </form>     
-                  <body onload="tick()">
-                      <div class="clock">
-                          <div id="s" class="transform"></div>
-                          <div id="m" class="transform"></div>
-                          <div id="h" class="transform"></div>
-                          <div id="center"></div>
-                      </div>
+<aside>
 
-                 
+  <div id="calculator">
+    <input type="text" id="displaybox">
+    <div>
+      <button>7</button><button>8</button><button>9</button><button>x</button>
+    </div>
+    <div>
+      <button>4</button><button>5</button><button>6</button><button>/</button>
+    </div>
+    <div>
+      <button>1</button><button>2</button><button>3</button><button>+</button>
+    </div>
+    <div>
+      <button>=</button><button>0</button><button>c</button><button>-</button>
+    </div>
+  </div>
+  <form id="calculator2">
+    <input id="displaybox2" type="text" name="display" readonly>
+    <input class="button" type="button" value="7" onclick="calculator.display.value += '7'">
+    <input class="button" type="button" value="8" onclick="calculator.display.value += '8'">
+    <input class="button" type="button" value="9" onclick="calculator.display.value += '9'">
+    <input class="button math" type="button" value="*" onclick="calculator.display.value += '*'">
+    <input class="button" type="button" value="4" onclick="calculator.display.value += '4'">
+    <input class="button" type="button" value="5" onclick="calculator.display.value += '5'">
+    <input class="button" type="button" value="6" onclick="calculator.display.value += '6'">
+    <input class="button math" type="button" value="/" onclick="calculator.display.value += '/'">
+    <input class="button" type="button" value="1" onclick="calculator.display.value += '1'">
+    <input class="button" type="button" value="2" onclick="calculator.display.value += '2'">
+    <input class="button" type="button" value="3" onclick="calculator.display.value += '3'">
+    <input class="button math" type="button" value="+" onclick="calculator.display.value += '+'">
+    <input class="button" type="button" value="=" onclick="calculator.display.value =eval(calculator.display.value)>
+                    <input class=" button" type="button" value="0" onclick="calculator.display.value += '0'">
+    <input id="buttonclear" type="button" value="c" onclick="calculator.display.value += ''">
+    <input class="button math" type="button" value="-" onclick="calculator.display.value += '-'">
 
-                <div class="month"> 
-                      <ul>
-                        <li class="prev">&#10094;</li>
-                        <li class="next">&#10095;</li>
-                        <li>Febuary<br><span style="font-size:18px">2019</span></li>
-                      </ul>
-                </div>
-                    
-                  
-                  <ul class="weekdays">
-                    <li>Mo</li>
-                    <li>Tu</li>
-                    <li>We</li>
-                    <li>Th</li>
-                    <li>Fr</li>
-                    <li>Sa</li>
-                    <li>Su</li>
-                  </ul>
-                  
-                  <ul class="days"> 
-                    <li>1</li>
-                    <li>2</li>
-                    <li>3</li>
-                    <li>4</li>
-                    <li>5</li>
-                    <li>6</li>
-                    <li>7</li>
-                    <li>8</li>
-                    <li>9</li>
-                    <li>10</li>
-                    <li>11</li>
-                    <li>11</li>
-                    <li>12</li>
-                    <li>13</li>
-                    <li>14</li>
-                    <li>15</li>
-                    <li><strong>16</strong></li>
-                    <li>17</li>
-                    <li>18</li>
-                    <li>19</li>
-                    <li>20</li>
-                    <li>21</li>
-                    <li>22</li>
-                    <li>23</li>
-                    <li>24</li>
-                    <li>25</li>
-                    <li>26</li>
-                    <li>27</li>
-                    <li>28</li>
-                    
-                  </ul></div>
-            </aside>
-    <div class="banner">div.banner</div>
-   <footer>Term of Use. License Agreement</footer>
-        
-    
+
+
+  </form>
+
+  <body onload="tick()">
+    <div class="clock">
+      <div id="s" class="transform"></div>
+      <div id="m" class="transform"></div>
+      <div id="h" class="transform"></div>
+      <div id="center"></div>
+    </div>
+
+
+
+    <div class="month">
+      <ul>
+        <li class="prev">&#10094;</li>
+        <li class="next">&#10095;</li>
+        <li>Febuary<br><span style="font-size:18px">2019</span></li>
+      </ul>
+    </div>
+
+
+    <ul class="weekdays">
+      <li>Mo</li>
+      <li>Tu</li>
+      <li>We</li>
+      <li>Th</li>
+      <li>Fr</li>
+      <li>Sa</li>
+      <li>Su</li>
+    </ul>
+
+    <ul class="days">
+      <li>1</li>
+      <li>2</li>
+      <li>3</li>
+      <li>4</li>
+      <li>5</li>
+      <li>6</li>
+      <li>7</li>
+      <li>8</li>
+      <li>9</li>
+      <li>10</li>
+      <li>11</li>
+      <li>11</li>
+      <li>12</li>
+      <li>13</li>
+      <li>14</li>
+      <li>15</li>
+      <li><strong>16</strong></li>
+      <li>17</li>
+      <li>18</li>
+      <li>19</li>
+      <li>20</li>
+      <li>21</li>
+      <li>22</li>
+      <li>23</li>
+      <li>24</li>
+      <li>25</li>
+      <li>26</li>
+      <li>27</li>
+      <li>28</li>
+
+    </ul>
+    </div>
+</aside>
+<div class="banner">div.banner</div>
+<footer>Term of Use. License Agreement</footer>
+
+
 </body>
+
 </html>
