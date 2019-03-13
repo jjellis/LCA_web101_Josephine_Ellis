@@ -46,6 +46,7 @@ body{
     aside{
         text-align:center;
         width: 100%;
+        margin-top:5%;
         margin-bottom:5%;
       }
     aside> nav >a {
@@ -69,7 +70,8 @@ body{
     height:100%;
     width:30%;
     border:solid 2px #02f78b;
-    
+    float:none;
+   
 }
 .list2{
     margin-left:4%;
@@ -103,6 +105,7 @@ div>address{
 }
      
 footer{
+    clear:both;
     height:25px ;
     text-align:center;
     width:100%;
@@ -115,4 +118,13 @@ footer a{
     color:#02f78b;
 }
     
-     
+@media (max-width: 1000px){
+body{
+    background:orange;
+
+}
+
+aside{
+    float:left;
+}
+}
