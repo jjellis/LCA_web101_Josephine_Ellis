@@ -28,7 +28,6 @@ body{
     color:#02f78b;
     font-size:20px;
     text-align: center;
-    padding-top: 50px;
     background: url(https://dl.dropbox.com/s/mz2pjouq8xqw45k/wood_1.png?dl=1);
   }
   .blockquote a{
@@ -118,13 +117,99 @@ footer a{
     color:#02f78b;
 }
     
+
+
+@media (max-width: 1400px){
+
+.blockquote{
+    
+    justify-content:center;
+    width:45%;
+    display: inline-block; }
+    
+    .list{
+        margin-left:4%;
+        margin-top:-60%;
+        height:100%;
+        width:30%;
+    }
+   
+ .mirror{
+    width:400px;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+}
 @media (max-width: 1000px){
-body{
-    background:orange;
+ 
+ .blockquote{
+    margin-left:-10%;
+    justify-content:center;
+    width:55%;
+    display: inline-block; }
+    
+    .list{
+        margin-left:4%;
+        margin-top:-75%;
+        height:100%;
+        width:30%;
+    }
+   
+ .mirror{
+    width:350px;
+}
+#footer {
+    position:absolute;
+    bottom:0;
+    width: 100%;
+}
+@media(max-width: 700px){
+   
+   aside{
+       width:420px;
+   }
+    aside a{
+        display: flex;
+        flex-direction: row;
+        margin-top:10%;
+        font-size: 12px;
+    }
+    .blockquote{
+        display: flex;
+        margin-top:10%;
+        margin-left:-48%;
+        width:98%;
+        display: flex; 
+        text-align: left;
+    }
+    .mirror{
+        width:140px;
+        height:150px;
+    }
+    .list{
+    
+        margin-top:5%;
+        height:100%;
+        width:90%;
+    }
+    .list2{  
+        height:100%;
+        width:90%;
+    }
+        .list3{
+    
+            height:100%;
+            width:90%;
+        }
 
-}
-
-aside{
-    float:left;
-}
-}
+        div>address{
+            width:50%;
+            font-size:15px;
+        }
+    #footer {
+        position:absolute;
+        bottom:0;
+        width: 100%;
+}    

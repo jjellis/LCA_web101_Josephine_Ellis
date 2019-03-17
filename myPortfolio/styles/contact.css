@@ -27,7 +27,7 @@ nav a{
 
 
 address{
-    margin:23% 0 10% -15%;
+    margin:23% 0 10% -17%;
     font-size:30px;
     
 
@@ -303,14 +303,19 @@ footer{
      width:400px;
      margin:-25% 0 10% 32%;
    }
- }
+ 
+   address{
+    margin:23% 0 10% -17%;
+    font-size:28px;
+  }
  footer{
    width:98%;
    font-size:25px;
  }
  #bq{
-  margin-left:-10%;
+  width:60%;
 }
+ }
 @media (max-width: 700px){
  header{
    font-size:25px;
@@ -324,16 +329,15 @@ footer{
     display:none;
   }
   #bq{
-    width:40%;
-    font-size:20px;
-    margin-left:-57%;
+    width:70%;
+    font-size:18px;
     letter-spacing: 0;
   }
 
 
  address{
    font-size:20px;
-   margin:163px 0 0 5%;
+   margin:163px 0 0 4%;
    
  }
 
