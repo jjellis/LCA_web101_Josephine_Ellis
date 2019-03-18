@@ -17,6 +17,7 @@ body{
  
 
   .blockquote {
+      overflow:hidden;
     box-sizing: border-box;
     position: relative;
     left:50%;
@@ -117,19 +118,27 @@ footer a{
     color:#02f78b;
 }
     
+@media (max-width: 200px){
+   
+    .list{
+        margin-left:4%;
+        margin-top:-30%;
+     
+    }
+}
 
-
-@media (max-width: 1400px){
-
+@media (max-width: 1100px){
 .blockquote{
     
     justify-content:center;
     width:45%;
-    display: inline-block; }
+    display: inline-block;
+    overflow: hidden;
+ }
     
     .list{
         margin-left:4%;
-        margin-top:-60%;
+        margin-top:-64%;
         height:100%;
         width:30%;
     }
@@ -148,8 +157,12 @@ footer a{
     margin-left:-10%;
     justify-content:center;
     width:55%;
-    display: inline-block; }
-    
+    display: inline-block; 
+    overflow: hidden;
+ }
+    aside{
+        margin-bottom:5%;
+    }
     .list{
         margin-left:4%;
         margin-top:-75%;
@@ -165,6 +178,15 @@ footer a{
     bottom:0;
     width: 100%;
 }
+@media(min-width: 850px){
+   
+    .list{
+    
+        margin-top:-60%;
+        height:100%;
+    }   
+}
+
 @media(max-width: 700px){
    
    aside{
@@ -183,6 +205,7 @@ footer a{
         width:98%;
         display: flex; 
         text-align: left;
+        overflow: hidden;
     }
     .mirror{
         width:140px;

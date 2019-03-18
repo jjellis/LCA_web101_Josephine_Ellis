@@ -24,7 +24,9 @@ nav{
 nav a{
     color:black;
 }
-
+a:hover { 
+  background-color: #fc22df;
+}
 
 address{
     margin:23% 0 10% -17%;
@@ -305,8 +307,8 @@ footer{
    }
  
    address{
-    margin:23% 0 10% -17%;
-    font-size:28px;
+    margin:23% 0 10% -5%;
+    font-size:22px;
   }
  footer{
    width:98%;
@@ -316,6 +318,8 @@ footer{
   width:60%;
 }
  }
+
+
 @media (max-width: 700px){
  header{
    font-size:25px;
@@ -323,7 +327,7 @@ footer{
    margin-bottom:4%;
  }
   header> nav{
-    width:25%;
+    width:20%;
   }
   .phone{
     display:none;
@@ -337,7 +341,7 @@ footer{
 
  address{
    font-size:20px;
-   margin:163px 0 0 4%;
+   margin:163px 0 0 3%;
    
  }
 
