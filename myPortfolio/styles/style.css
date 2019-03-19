@@ -28,9 +28,9 @@ body {
     width: 100%;
     display: grid;
     grid-template-columns: 30% 40% 30%;
-  
+    color:white;
   }
-  
+
   nav > a {
     height: auto;
     width: auto;
@@ -40,6 +40,9 @@ body {
     background: transparent; 
     text-align: center;
     
+  }
+  a:hover { 
+    background-color: #fc22df;
   }
   
   .has-border {
