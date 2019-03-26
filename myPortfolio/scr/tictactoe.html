@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../styles/tictac.css">
+    <script src="../scripts/tictactoe.js"></script>
+    <title>tictactoe</title>
+</head>
+<body>
+    <button type="button" id="x" class="button" onClick="setFig(this.id)" var gameMarker="x"><b>x</b></button>
+    <button type="button" id="o" class="button" onClick="setFig(this.id)" var gameMarker="o"><b>o</b></button>
+    <div  id=container>
+        <div id="space1" onclick="placeMark(this.Id)"></div>
+        <div id="space2" onclick="placeMark(this.Id)"></div>
+        <div id="space3" onclick="placeMark(this.Id)"></div>
+        <div id="space4" onclick="placeMark(this.Id)"></div>
+        <div id="space5" onclick="placeMark(this.Id)"></div>
+        <div id="space6" onclick="placeMark(this.Id)"></div>
+        <div id="space7" onclick="placeMark(this.Id)"></div>
+        <div id="space8" onclick="placeMark(this.Id)"></div>
+        <div id="space9" onclick="placeMark(this.Id)"></div>
+    </div>
+    <button type="button" id="clear" onclick="clearBoard"><b>start</b></button>
+</body>
+</html>
