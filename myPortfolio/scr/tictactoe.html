@@ -12,16 +12,19 @@
     <button type="button" id="x" class="button" onClick="setFig(this.id)" var gameMarker="x"><b>x</b></button>
     <button type="button" id="o" class="button" onClick="setFig(this.id)" var gameMarker="o"><b>o</b></button>
     <div  id=container>
-        <div id="space1" onclick="placeMark(this.Id)"></div>
-        <div id="space2" onclick="placeMark(this.Id)"></div>
-        <div id="space3" onclick="placeMark(this.Id)"></div>
-        <div id="space4" onclick="placeMark(this.Id)"></div>
-        <div id="space5" onclick="placeMark(this.Id)"></div>
-        <div id="space6" onclick="placeMark(this.Id)"></div>
-        <div id="space7" onclick="placeMark(this.Id)"></div>
-        <div id="space8" onclick="placeMark(this.Id)"></div>
-        <div id="space9" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space1" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space2" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space3" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space4" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space5" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space6" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space7" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space8" onclick="placeMark(this.Id)"></div>
+        <div class='row' id="space9" onclick="placeMark(this.Id)"></div>
     </div>
-    <button type="button" id="clear" onclick="clearBoard"><b>start</b></button>
+    <div class='end'>
+        <div class='text'></div>
+    </div>
+    <button type="button" id="clear" onclick="clearBoard()"><b>Play?</b></button>
 </body>
 </html>
