@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../styles/dashboard-styles.css">
+  
   <title>Dashboard</title>
 </head>
 
@@ -13,11 +14,11 @@
   <div class="container">
     <header>"Hard work"</header>
     <nav>
-      <ul>
+      <ol>
         <li><a href="#">nav 1</a></li>
         <li><a href="#">nav 2</a></li>
         <li><a href="#">nav 3</a></li>
-      </ul>
+      </ol>
     </nav>
     <main>
       <h1>Main Title</h1>
@@ -25,31 +26,25 @@
 
 
 
-</body>
-<!--
-                  <iframe scrolling="no" frameborder="no" clocktype="html5" style="overflow:hidden;border:0;margin:0;padding:0;width:256px;height:174px;"src="https://www.clocklink.com/html5embed.php?clock=046&timezone=CST&color=black&size=256&Title=&Message=&Target=&From=2019,1,1,0,0,0&Color=black"></iframe>
-                    
-                    <div id="a"></div>
-                    <div id="picture"></div>
-                    <form>
-                      <input id="UTCoffset" type="text" placeholder="UTC Time Zone">
-                    </form>
-                    <p id="result"></p>
-                  -->
+
 
 </div>
-<div id="todo">
-  <p>To do<p>
-      <form action="/action_page.php">
-        <input type="text" input="fname" class="box"><br>
-        <input type="submit" value="Submit">
-        <ul style="list-style-type:square;">
-          <li>fix page</li>
-          <li>order</li>
-          <li>design</li>
+
+    <div id="list_section">
+        <h3 id="header">To-do list</h3>
+        <ul>
+          <li class="item">Fix page</li>
         </ul>
-      </form>
-</div>
+        <div id="newItemButton"><button href="#">new item</button></div>
+        <form id="newItemForm">
+          <input type="text" id="itemField" placeholder="Item" />
+          <input type="submit" id="add" value="add" />
+        </form>
+       
+    </div>
+      
+    
+
 
 
 <aside>
@@ -84,7 +79,7 @@
     <input class="button" type="button" value="3" onclick="calculator.display.value += '3'">
     <input class="button math" type="button" value="+" onclick="calculator.display.value += '+'">
     <input class="button" type="button" value="=" onclick="calculator.display.value =eval(calculator.display.value)>
-                    <input class=" button" type="button" value="0" onclick="calculator.display.value += '0'">
+    <input class="button" type="button" value="0" onclick="calculator.display.value += '0'">
     <input id="buttonclear" type="button" value="c" onclick="calculator.display.value += ''">
     <input class="button math" type="button" value="-" onclick="calculator.display.value += '-'">
 
@@ -156,9 +151,11 @@
     </div>
 </aside>
 <div class="banner">div.banner</div>
+</body>
 <footer>Term of Use. License Agreement</footer>
 
 
-</body>
 
+<script src="../scripts/jquery-3.3.1.min.js"></script>
+<script src="../scripts/dashboard.js"></script>
 </html>
