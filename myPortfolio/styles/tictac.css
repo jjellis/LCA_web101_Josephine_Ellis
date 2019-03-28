@@ -1,19 +1,22 @@
-#container{
+#game-board{
 display:grid;
 grid-template-columns: repeat(3, 1fr);
-width:400px;
-height:400px;
+width:300px;
+height:300px;
 border: 3px solid black;
-margin-left:35%;   
+margin-left:calc(50vw - 150px);   
 margin-top:5%;
+font-size:40px;
+text-align: center;
 }
 .button{
     font-size:50px;
     border: 3px solid black;
-    margin-left:20%; 
+    margin-left:14%; 
+    border-radius: 15%;
 }
 #x{
-    margin-left:35%;
+    margin-left:calc(50vw - 150px);
 }
 #space1{
     border: 3px solid black;

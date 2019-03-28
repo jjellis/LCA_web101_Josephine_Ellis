@@ -9,22 +9,23 @@
     <title>tictactoe</title>
 </head>
 <body>
-    <button type="button" id="x" class="button" onClick="setFig(this.id)" var gameMarker="x"><b>x</b></button>
-    <button type="button" id="o" class="button" onClick="setFig(this.id)" var gameMarker="o"><b>o</b></button>
-    <div  id=container>
-        <div class='row' id="space1" onclick="placeMark(this.Id)"></div>
-        <div class='row' id="space2" onclick="placeMark(this.Id)"></div>
-        <div class='row' id="space3" onclick="placeMark(this.Id)"></div>
-        <div class='row' id="space4" onclick="placeMark(this.Id)"></div>
-        <div class='row' id="space5" onclick="placeMark(this.Id)"></div>
-        <div class='row' id="space6" onclick="placeMark(this.Id)"></div>
-        <div class='row' id="space7" onclick="placeMark(this.Id)"></div>
-        <div class='row' id="space8" onclick="placeMark(this.Id)"></div>
-        <div class='row' id="space9" onclick="placeMark(this.Id)"></div>
-    </div>
-    <div class='end'>
-        <div class='text'></div>
-    </div>
-    <button type="button" id="clear" onclick="clearBoard()"><b>Play?</b></button>
+    <section>
+    <button type="button" id="x" class="button" name="x" onClick="changeMarkerTox();" ><b>x</b></button>
+    <button type="button" id="o" class="button" name="o" onClick="changeMarkerToo();" ><b>o</b></button>
+    </section>
+    <section  id=game-board>
+        <div class='block' id="space1" onclick="placeMark('space1')"></div>
+        <div class='block' id="space2" onclick="placeMark('space2')"></div>
+        <div class='block' id="space3" onclick="placeMark('space3')"></div>
+        <div class='block' id="space4" onclick="placeMark('space4')"></div>
+        <div class='block' id="space5" onclick="placeMark('space5')"></div>
+        <div class='block' id="space6" onclick="placeMark('space6')"></div>
+        <div class='block' id="space7" onclick="placeMark('space7')"></div>
+        <div class='block' id="space8" onclick="placeMark('space8')"></div>
+        <div class='block' id="space9" onclick="placeMark('space9')"></div>
+    </section>
+    <section class='end'>    
+        <button type="button" id="clear" onclick="clearBoard()"><b>Play?</b></button>
+    </section>
 </body>
 </html>
