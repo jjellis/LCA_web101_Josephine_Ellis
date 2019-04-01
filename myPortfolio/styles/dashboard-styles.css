@@ -7,7 +7,20 @@ header {
     min-height: calc(100vh - 54px);
     grid-area: main;
   }
-
+#location{
+  display:none;
+  background:lightblue;
+  border: 3px solid black;
+  width:30%;
+  height: 200px;
+  margin:5px 0 5px 0;
+  
+}
+#ugh{
+  background:lightblue;
+  width:30%;
+  margin:5px 0 5px 0;
+}
   nav {
     background-color: lightsalmon;
     grid-area: nav;
@@ -296,6 +309,11 @@ html{background:#393939}
         grid-area: aside;
         width:70%;
         grid-area:right;
+      }
+      #ugh{
+        background:lightblue;
+        width:90%;
+        margin:5px 0 5px 0;
       }
     }
     
