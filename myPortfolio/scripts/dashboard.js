@@ -47,6 +47,8 @@ function geoFindMe() {
 }
 
 document.querySelector('#find-me').addEventListener('click', geoFindMe);
+window.addEventListener('load', geoFindMe);
+
 
 /*var latlon document.getElementById("location");
 function getLocation() {

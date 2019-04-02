@@ -6,7 +6,9 @@ header {
     background-color: pink;
     min-height: calc(100vh - 54px);
     grid-area: main;
+    
   }
+
 #location{
   display:none;
   background:lightblue;
