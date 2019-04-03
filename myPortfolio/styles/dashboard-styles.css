@@ -332,6 +332,9 @@ html{background:#393939}
         grid-area: aside;
         width:70%;
         grid-area:right;
+        background:pink !important;
+        margin:0;
+        margin-bottom:200px;
       }
       #ugh{
         background:lightblue;
