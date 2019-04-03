@@ -42,10 +42,10 @@ header {
   aside {
    
     grid-area: aside;
-    width:50%;
+    width:60%;
     grid-area:right;
     margin-left:40%;
-    margin-top:-26.5%;
+    margin-top:-30.5%;
     margin-bottom:20%;
   }
   .banner {

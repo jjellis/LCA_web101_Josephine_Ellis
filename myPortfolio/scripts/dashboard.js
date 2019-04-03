@@ -84,3 +84,25 @@ function showError(error) {
       break;
   }
 }*/
+
+var points = 0;
+function game(number) {
+  points = points + number;
+  document.getElementById("points") .innerHTML = points;
+};
+/*var basic = 0;
+function buybasicupgrade() {
+  var basic =  math.floor(20 * math.pow 3.2,basic);
+  if (money >= basic)
+  basic = basic+0.1;
+  points = points - basic;
+  document.getElementById("basic") .innerHTML = basic;
+  document.getElementById("points") .innerHTML = points;
+};
+var nextCost = math.floor(20 * math.pow(3.2,basic));
+document.getElementById("basic") .innerHTML = nextCost;
+
+window.setInterval(function(){
+  "game(basic);
+}, 1000);*/
+
