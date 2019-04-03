@@ -30,6 +30,11 @@ header {
   margin:5px 0 5px 0;
   
 }
+#game{
+  background:lightcyan;
+  width:30%;
+  height:10%;
+}
 #ugh{
   background:lightblue;
   width:30%;
