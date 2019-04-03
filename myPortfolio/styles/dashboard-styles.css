@@ -8,7 +8,19 @@ header {
     grid-area: main;
     
   }
-
+  .parallax { 
+    /* The image used */
+    background-image: url("../images/pexels.jpeg");
+  
+    /* Set a specific height */
+    height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 #location{
   display:none;
   background:lightblue;
@@ -32,6 +44,9 @@ header {
     grid-area: aside;
     width:50%;
     grid-area:right;
+    margin-left:40%;
+    margin-top:-26.5%;
+    margin-bottom:20%;
   }
   .banner {
     background-color: lavender;
@@ -228,7 +243,10 @@ html{background:#393939}
     background: #1abc9c;
     color: white !important;
   }
-  
+  .cal{
+    margin-bottom:20px;
+  }
+
   #list_section {
     text-align: center;
     border: 2px solid black;
@@ -293,6 +311,9 @@ html{background:#393939}
     margin-top: 60px;
     width: 60%;
   }
+  .footer {
+    margin-top:40%;
+  }
  
     @media (max-width: 500px) {
       .container {
@@ -317,6 +338,8 @@ html{background:#393939}
         width:90%;
         margin:5px 0 5px 0;
       }
+      .parallax {
+        background-attachment: scroll;
+      }
     }
     
-  
