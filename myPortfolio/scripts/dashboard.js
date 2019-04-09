@@ -84,12 +84,16 @@ function showError(error) {
       break;
   }
 }*/
-
+//counts the number of times the button is clicked
 var points = 0;
 function game(number) {
   points = points + number;
   document.getElementById("points") .innerHTML = points;
 };
+
+/*$("#button").click(function() {
+  $("#points")++;
+  }*/
 /*var basic = 0;
 function buybasicupgrade() {
   var basic =  math.floor(20 * math.pow 3.2,basic);
