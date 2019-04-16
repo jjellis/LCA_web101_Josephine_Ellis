@@ -31,19 +31,19 @@
 </div>
 <div class="parallax"></div>
 
-    <div id="list_section">
-        <h3 id="header">To-do list</h3>
-        <ul>
-          <li class="item">Fix page</li>
-        </ul>
-        <div id="newItemButton"><button href="#">new item</button></div>
-        <form id="newItemForm">
-          <input type="text" id="itemField" placeholder="Item" />
-          <input type="submit" id="add" value="add" />
-        </form>
-       
-    </div>
-      
+      <div id="list_section">
+          <h3 id="header">To-do list</h3>
+          <ul>
+            <li class="item">Fix page</li>
+          </ul>
+          <div id="newItemButton"><button href="#">new item</button></div>
+          <form id="newItemForm">
+            <input type="text" id="itemField" placeholder="Item" />
+            <input type="submit" id="add" value="add" />
+          </form>
+        
+      </div>
+        
     <div id="game">
       <h2><button id="button" onclick="game(1)">Click!</button> Points:<span id="points">0</span></h2>
     <!--  <h2>Buy upgrade</h2>
@@ -63,7 +63,7 @@
 <aside class="parallax">
 
   <!--<div id="calculator">
-    <input type="text" id="displaybox">
+    <input type="text" id="displaybox" readonly>
     <div>
       <button onclick="addNumber('7')">7</button><button onclick="addNumber('8')">8</button><button onclick="addNumber('9')">9</button><button onclick="multiplication()">x</button>
     </div>
@@ -100,7 +100,7 @@
  </form>
 -->
 <div id="calc">
-    <input type="text" id="results">
+    <input type="text" id="results" readonly>
     <table>
       <tr>
         <td class="button" onclick="addNumber('1')">1</td>

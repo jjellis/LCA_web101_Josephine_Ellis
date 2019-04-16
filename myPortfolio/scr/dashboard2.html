@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My dashboard</title>
+</head>
+<body>
+    <header>
+        The Dashboad life
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#">nav 1</a></li>
+            <li><a href="#">nav 2</a></li>
+            <li><a href="#">nav 3</a></li>
+        </ol>
+    </nav>
+   <!--add clicker game--> 
+  <section id='left'>
+   <div id="game">
+        <h2><button id="button" onclick="game(1)">Click!</button> Points:<span id="points">0</span></h2>
+   </div>
+    <!-- to do list--> 
+    <div id="list_section">
+            <h3 id="header">To-do list</h3>
+            <ul>
+              <li class="item">Fix page</li>
+            </ul>
+            <div id="newItemButton"><button href="#">new item</button></div>
+            <form id="newItemForm">
+              <input type="text" id="itemField" placeholder="Item" />
+              <input type="submit" id="add" value="add" />
+            </form>
+           
+       </div>
+          
+       <!-- location with map--> 
+       <div id="location">
+            <button onclick="getLocation()">Get Location!</button>
+          </div>
+          <div id='ugh'>
+          <button id = "find-me">Show my location</button><br/>
+          <button id = "find-me">Refresh!</button>
+          <p id = "status"></p>
+          <a id = "map-link" target="_blank"></a>
+       </div>
+    </section>
+ <aside>
+   <!--add time/date working--> 
+
+   <!--calculator--> 
+<div id="calc">
+    <input type="text" id="results" readonly>
+    <table>
+      <tr>
+        <td class="button" onclick="addNumber('1')">1</td>
+        <td class="button" onclick="addNumber('2')">2</td>
+        <td class="button" onclick="addNumber('3')">3</td>
+        <td class="button" onclick="addition()">+</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="addNumber('4')">4</td>
+        <td class="button" onclick="addNumber('5')">5</td>
+        <td class="button" onclick="addNumber('6')">6</td>
+        <td class="button" onclick="subtract()">-</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="addNumber('7')">7</td>
+        <td class="button" onclick="addNumber('8')">8</td>
+        <td class="button" onclick="addNumber('9')">9</td>
+        <td class="button" onclick="multiple()">*</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="decimal()">.</td>
+        <td class="button" onclick="addNumber('0')">0</td>
+        <td class="button" onclick="equals()">=</td>
+        <td class="button" onclick="divide()">/</td>
+      </tr>
+      <tr>
+        <td class="button" colspan="2" onclick="deleteLast()">Delete</td>
+        <td class="button" colspan="2" onclick="clearResults()">Clear</td>
+    </table>
+  </div>
+   <!--calenader with have--> 
+   <div class="cal">
+        <div class="month">
+          <ul>
+            <li class="prev">&#10094;</li>
+            <li class="next">&#10095;</li>
+            <li>Febuary<br><span style="font-size:18px">2019</span></li>
+          </ul>
+        </div>
+    
+    
+        <ul class="weekdays">
+          <li>Mo</li>
+          <li>Tu</li>
+          <li>We</li>
+          <li>Th</li>
+          <li>Fr</li>
+          <li>Sa</li>
+          <li>Su</li>
+        </ul>
+    
+        <ul class="days">
+          <li>1</li>
+          <li>2</li>
+          <li>3</li>
+          <li>4</li>
+          <li>5</li>
+          <li>6</li>
+          <li>7</li>
+          <li>8</li>
+          <li>9</li>
+          <li>10</li>
+          <li>11</li>
+          <li>11</li>
+          <li>12</li>
+          <li>13</li>
+          <li>14</li>
+          <li>15</li>
+          <li><strong>16</strong></li>
+          <li>17</li>
+          <li>18</li>
+          <li>19</li>
+          <li>20</li>
+          <li>21</li>
+          <li>22</li>
+          <li>23</li>
+          <li>24</li>
+          <li>25</li>
+          <li>26</li>
+          <li>27</li>
+          <li>28</li>
+    
+        </ul>
+        </div>
+</aside>
+  
+   <footer>
+       This footer stuff goes here.
+   </footer>
+   <style>
+       body{
+        background:rgb(134, 248, 204);
+       }
+       header{
+           background:rgb(245, 170, 245);
+           text-align: center;
+           font-size: 30px;
+       }
+       
+       aside {
+   
+         grid-area: aside;
+         width:50%;
+         grid-area:right;
+         margin-left:70%;
+         margin-top:-40%;
+         
+ }
+        #calc{
+            border: 2px solid black;
+            width: 130px;
+            padding:2px;
+            background: powderblue;
+        }
+    input {
+    width: 114px;
+    margin-left: 2px
+    }
+    .button {
+    border: 1px solid black;
+    width: 26px;
+    text-align: center;
+    cursor: pointer;
+    }
+    #location{
+  display:none;
+  background:lightblue;
+  border: 3px solid black;
+  width:30%;
+  height: 200px;
+  margin:5px 0 5px 0;
+  
+}
+#game{
+  background:lightcyan;
+  width:20%;
+  height:10%;
+  margin:2px;
+  margin-bottom:10px;
+}
+#button{
+  background:url("../images/game.jpg") no-repeat center center;
+  width:200px;
+  height: 200px;
+}
+#ugh{
+  background:lightblue;
+  width:30%;
+  margin:5px 0 15px 0;
+}
+.cal{
+    width: 40%;
+}
+.month {
+    margin-top: 120px;
+   
+    background:lightslategray;
+    text-align: center;
+  }
+  
+  
+  .month ul {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .month ul li {
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  
+  .month .prev {
+    float: left;
+    padding-top: 10px;
+  }
+  
+  .month .next {
+    float: right;
+    padding-top: 10px;
+  }
+  
+  
+  .weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color:#ddd;
+  }
+  
+  .weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+  }
+  
+  
+  .days {
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+  }
+  
+  .days li {
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size:12px;
+    color: #777;
+  }
+  
+  
+  .days li .active {
+    padding: 5px;
+    background: #1abc9c;
+    color: white !important;
+  }
+  #list_section {
+    text-align: center;
+    border: 2px solid black;
+    width: 30%;
+  }
+  
+  h3 {
+    color: black;
+    margin: 0px auto;
+    padding: 20px;
+    font-size:40px;
+  }
+  .item {
+    background-color: #fff;
+    color: #000;
+    font-size: 20px;
+    list-style-type: none;
+    width: 30%;
+    margin: 0px auto;
+    border-radius: 3px;
+    border: 1px solid #000;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    background-color: #fff;
+    color: #666;
+    padding: 10px;
+    display: inline-block;
+    margin: 20px auto 20px auto;
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+  }
+  
+
+  
+  input[type='text'] {
+    font-size: 12px;
+    padding: 6px;
+    border: 1px solid #000;
+    border-radius: 3px;
+  }
+  
+  input[type='submit'] {
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+  }
+  
+  #newItemButton {
+    display: none;
+  }
+  
+  #itemField {
+    margin-top: 60px;
+    width: 60%;
+  }
+
+  footer{
+           background:rgb(245, 170, 245);
+           text-align: center;
+           font-size: 30px;
+           margin-top:25%;
+       }
+    </style>
+    <script>
+    function addNumber(num) {
+    document.querySelector("#results").value += num;
+    }
+    
+    function clearResults() {
+    document.querySelector("#results").value = "";
+    }
+    
+    function addition() {
+    document.querySelector("#results").value += "+";
+    }
+    
+    function subtract() {
+    document.querySelector("#results").value += "-";
+    }
+    function multiple() {
+    document.querySelector("#results").value += "*";
+    }
+    function divide() {
+    document.querySelector("#results").value += "/";
+    }
+    function decimal() {
+      document.querySelector("#results").value += ".";
+    }
+    
+    function equals() {
+    document.querySelector("#results").value = eval(document.querySelector("#results").value);
+    }
+    
+    function deleteLast() {
+    let current = document.querySelector("#results").value;
+    document.querySelector("#results").value = current.slice(0, -1);
+    }
+    </script>
+</body>
+<script src="../scripts/jquery-3.3.1.min.js"></script>
+<script src="../scripts/dashboard.js"></script>
+</html>
