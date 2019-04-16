@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>cal</title>
+</head>
+<body>
+  
+ <div id="calc">
+  <input type="text" id="results">
+  <table>
+    <tr>
+      <td class="button" onclick="addNumber('1')">1</td>
+      <td class="button" onclick="addNumber('2')">2</td>
+      <td class="button" onclick="addNumber('3')">3</td>
+      <td class="button" onclick="addition()">+</td>
+    </tr>
+    <tr>
+      <td class="button" onclick="addNumber('4')">4</td>
+      <td class="button" onclick="addNumber('5')">5</td>
+      <td class="button" onclick="addNumber('6')">6</td>
+      <td class="button" onclick="subtract()">-</td>
+    </tr>
+    <tr>
+      <td class="button" onclick="addNumber('7')">7</td>
+      <td class="button" onclick="addNumber('8')">8</td>
+      <td class="button" onclick="addNumber('9')">9</td>
+      <td class="button" onclick="multiple()">*</td>
+    </tr>
+    <tr>
+      <td class="button" onclick="decimal()">.</td>
+      <td class="button" onclick="addNumber('0')">0</td>
+      <td class="button" onclick="equals()">=</td>
+      <td class="button" onclick="divide()">/</td>
+    </tr>
+    <tr>
+      <td class="button" colspan="2" onclick="deleteLast()">Delete</td>
+      <td class="button" colspan="2" onclick="clearResults()">Clear</td>
+  </table>
+  <style>
+      #calc{
+          border: 2px solid black;
+          width: 130px;
+          padding:2px;
+      }
+  input {
+  width: 119.5px;
+  margin-left: 2px
+}
+.button {
+  border: 1px solid black;
+  width: 26px;
+  text-align: center;
+  cursor: pointer;
+}
+  </style>
+  <script>
+  function addNumber(num) {
+  document.querySelector("#results").value += num;
+}
+
+function clearResults() {
+  document.querySelector("#results").value = "";
+}
+
+function addition() {
+  document.querySelector("#results").value += "+";
+}
+
+function subtract() {
+  document.querySelector("#results").value += "-";
+}
+function multiple() {
+  document.querySelector("#results").value += "*";
+}
+function divide() {
+  document.querySelector("#results").value += "/";
+}
+function decimal() {
+    document.querySelector("#results").value += ".";
+}
+
+function equals() {
+  document.querySelector("#results").value = eval(document.querySelector("#results").value);
+}
+
+function deleteLast() {
+  let current = document.querySelector("#results").value;
+  document.querySelector("#results").value = current.slice(0, -1);
+}
+  </script>
+</div>
+</body>
+</html>

@@ -62,22 +62,24 @@
 </div>
 <aside class="parallax">
 
-  <div id="calculator">
+  <!--<div id="calculator">
     <input type="text" id="displaybox">
     <div>
-      <button>7</button><button>8</button><button>9</button><button>x</button>
+      <button onclick="addNumber('7')">7</button><button onclick="addNumber('8')">8</button><button onclick="addNumber('9')">9</button><button onclick="multiplication()">x</button>
     </div>
     <div>
-      <button>4</button><button>5</button><button>6</button><button>/</button>
+      <button onclick="addNumber('4')">4</button><button onclick="addNumber('5')">5</button><button onclick="addNumber('6')">6</button><button onclick="division()">/</button>
     </div>
     <div>
-      <button>1</button><button>2</button><button>3</button><button>+</button>
+      <button>1</button><button>2</button><button>3</button><button onclick="addition()">+</button>
     </div>
     <div>
-      <button>=</button><button>0</button><button>c</button><button>-</button>
+      <button>=</button><button>0</button><button>c</button><button onclick="subtraction()">-</button>
     </div>
-  </div>
-  <form id="calculator2">
+  </div>-->
+  
+  
+ <!-- <form id="calculator2">
     <input id="displaybox2" type="text" name="display" readonly>
     <input class="button" type="button" value="7" onclick="calculator.display.value += '7'">
     <input class="button" type="button" value="8" onclick="calculator.display.value += '8'">
@@ -95,10 +97,40 @@
     <input class="button" type="button" value="0" onclick="calculator.display.value += '0'">
     <input id="buttonclear" type="button" value="c" onclick="calculator.display.value += ''">
     <input class="button math" type="button" value="-" onclick="calculator.display.value += '-'">
-
-
-
-  </form>
+ </form>
+-->
+<div id="calc">
+    <input type="text" id="results">
+    <table>
+      <tr>
+        <td class="button" onclick="addNumber('1')">1</td>
+        <td class="button" onclick="addNumber('2')">2</td>
+        <td class="button" onclick="addNumber('3')">3</td>
+        <td class="button" onclick="addition()">+</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="addNumber('4')">4</td>
+        <td class="button" onclick="addNumber('5')">5</td>
+        <td class="button" onclick="addNumber('6')">6</td>
+        <td class="button" onclick="subtract()">-</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="addNumber('7')">7</td>
+        <td class="button" onclick="addNumber('8')">8</td>
+        <td class="button" onclick="addNumber('9')">9</td>
+        <td class="button" onclick="multiple()">*</td>
+      </tr>
+      <tr>
+        <td class="button" onclick="decimal()">.</td>
+        <td class="button" onclick="addNumber('0')">0</td>
+        <td class="button" onclick="equals()">=</td>
+        <td class="button" onclick="divide()">/</td>
+      </tr>
+      <tr>
+        <td class="button" colspan="2" onclick="deleteLast()">Delete</td>
+        <td class="button" colspan="2" onclick="clearResults()">Clear</td>
+    </table>
+  </div>
 
   <body onload="tick()">
     <div class="clock">
@@ -165,6 +197,59 @@
   </div>
 </aside>
 <footer>Term of Use. License Agreement</footer>
+<style>
+    #calc{
+        border: 2px solid black;
+        width: 130px;
+        padding:2px;
+        background: powderblue;
+    }
+input {
+width: 114px;
+margin-left: 2px
+}
+.button {
+border: 1px solid black;
+width: 26px;
+text-align: center;
+cursor: pointer;
+}
+</style>
+<script>
+function addNumber(num) {
+document.querySelector("#results").value += num;
+}
+
+function clearResults() {
+document.querySelector("#results").value = "";
+}
+
+function addition() {
+document.querySelector("#results").value += "+";
+}
+
+function subtract() {
+document.querySelector("#results").value += "-";
+}
+function multiple() {
+document.querySelector("#results").value += "*";
+}
+function divide() {
+document.querySelector("#results").value += "/";
+}
+function decimal() {
+  document.querySelector("#results").value += ".";
+}
+
+function equals() {
+document.querySelector("#results").value = eval(document.querySelector("#results").value);
+}
+
+function deleteLast() {
+let current = document.querySelector("#results").value;
+document.querySelector("#results").value = current.slice(0, -1);
+}
+</script>
 </body>
 
 
