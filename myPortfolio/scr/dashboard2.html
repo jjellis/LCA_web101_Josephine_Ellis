@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        The Dashboad life
+        The Dashboad Life
     </header>
     <nav>
         <ol>
@@ -25,7 +25,7 @@
     <!-- to do list--> 
     <div id="list_section">
             <h3 id="header">To-do list</h3>
-            <ul>
+            <ul id='lists'>
               <li class="item">Fix page</li>
             </ul>
             <div id="newItemButton"><button href="#">new item</button></div>
@@ -157,7 +157,7 @@
          grid-area: aside;
          width:50%;
          grid-area:right;
-         margin-left:70%;
+         margin-left:50%;
          margin-top:-40%;
          
  }
@@ -204,7 +204,7 @@
   margin:5px 0 15px 0;
 }
 .cal{
-    width: 40%;
+    width: 70%;
 }
 .month {
     margin-top: 120px;
@@ -354,6 +354,8 @@
     
     function addition() {
     document.querySelector("#results").value += "+";
+    if (current_value !== '')
+    
     }
     
     function subtract() {

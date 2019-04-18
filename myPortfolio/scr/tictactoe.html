@@ -10,8 +10,12 @@
 </head>
 <body>
     <section>
+        <p><pre>
+                Choose who starts! 
+                         x or o??</pre></p>
     <button type="button" id="x" class="button" name="x" onClick="changeMarkerTox();" ><b>x</b></button>
     <button type="button" id="o" class="button" name="o" onClick="changeMarkerToo();" ><b>o</b></button>
+    
     </section>
     <section  id=game-board>
         <div class='block' id="space1" onclick="placeMark('space1')"></div>
@@ -25,7 +29,7 @@
         <div class='block' id="space9" onclick="placeMark('space9')"></div>
     </section>
     <section class='end'>    
-        <button type="button" id="clear" onclick="clearBoard()"><b>Play?</b></button>
+        <button type="button" id="clear" onclick="refreshPage()"><b>Play Again?</b></button>
     </section>
 </body>
 </html>

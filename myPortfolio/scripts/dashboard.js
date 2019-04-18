@@ -1,6 +1,6 @@
 $(function() {
 
-  let $list = $('ul');
+  let $list = $('#lists');
   let $newItemForm = $('#newItemForm');
 
   $newItemForm.on('submit', function(e) {

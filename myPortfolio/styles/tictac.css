@@ -8,6 +8,7 @@ margin-left:calc(50vw - 150px);
 margin-top:5%;
 font-size:40px;
 text-align: center;
+
 }
 .button{
     font-size:50px;
@@ -17,6 +18,12 @@ text-align: center;
 }
 #x{
     margin-left:calc(50vw - 150px);
+}
+pre{
+    margin-left:calc(48vw - 150px);
+    font-size:25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
 }
 #space1{
     border: 3px solid black;
@@ -46,9 +53,10 @@ text-align: center;
     border: 3px solid black;
 }
 #clear{
-    display:none;
+    /*display:none;*/
     margin-top:2%;
     margin-left:46%;
     font-size:30px;
     border: 3px solid black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
